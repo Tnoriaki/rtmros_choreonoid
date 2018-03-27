@@ -6,7 +6,7 @@ import numpy, time, math
 def resetPosition():
     robotname = "JAXON_RED"
     pos = [0, 0, 1.00]
-    rpy = [0, 0, 0]
+    rpy = [0, 0, 90]
 
     robotItem = cnoid.Base.RootItem.instance().findItem(robotname)
     simulatorItem = cnoid.BodyPlugin.SimulatorItem.findActiveSimulatorItemFor(robotItem)
